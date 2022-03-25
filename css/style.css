@@ -1,0 +1,524 @@
+* {box-sizing: border-box;}
+
+html, body {
+    font-size: 16px;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: white;
+}
+
+#fullpage {
+    height:100vh;
+    overflow:hidden;
+}
+
+#fullpage section {
+    height:100vh; 
+}
+    
+
+.subhead{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 0;
+    margin-top: 8%;
+}
+
+.titlehero{
+    font-size: 18rem;
+    text-align: center;
+    margin: -3rem;
+}
+
+.synopsis{
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1rem;
+    width: 60%;
+    text-align: center;
+}
+
+.fullbg{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+.hero {
+    position: relative;
+}
+
+.top-text {
+    position: absolute;
+    width: 80%;
+    left: 65%;
+    top: 5%;
+    transform: translateX(-65%);
+}
+
+.sidebar{
+    background-color: black;
+    left: 0;
+    top: 0;
+    width: 5.58rem;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    z-index: 50;
+    padding-top: 2rem;
+}
+
+.sidebuttons{ 
+    display: block;
+}
+
+.menu{
+    padding: 2rem;
+}
+
+.up{
+    margin-top: 28rem;
+    padding: 1.5rem;
+    visibility: hidden;
+}
+
+.down{
+    margin-top: 3rem;
+    padding: 1.5rem;
+}
+
+.main{
+    position: relative;
+}
+
+.title{
+    font-size: 14.375rem;
+    text-align: center;
+    margin: 0 0;
+    position: absolute;
+    width: 70%;
+    left: 65%;
+    top: 20%;
+    transform: translateX(-65%);
+    line-height: 15rem;
+}
+
+.titleline{
+    font-size: 14.375rem;
+    text-align: center;
+    margin: 0 0;
+    position: absolute;
+    width: 70%;
+    left: 65%;
+    top: 35%;
+    transform: translateX(-65%);
+    line-height: 15rem;
+}
+
+.duet{
+    font-size: 6rem;
+    text-align: center;
+    margin: 0 0;
+    position: absolute;
+    width: 70%;
+    left: 65%;
+    top: 50%;
+    transform: translateX(-65%);
+}
+
+.music{
+    position: absolute;
+    height: 100vh;
+    left: 10%;
+    top: 0;
+}
+
+.about{
+    position: absolute;
+    height: 100vh;
+    right: 4%;
+    top: 0;
+}
+
+.aboutpage{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.mvpage{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.aboutarrow{
+    position: absolute;
+    height: 3rem;
+    left: 10%;
+    top: 50%;
+}
+
+.mvarrow{
+    position: absolute;
+    height: 3rem;
+    right: 5%;
+    top: 50%;
+}
+
+.play{
+    position: absolute;
+    height: 8rem;
+    left: 52%;
+    top: 42%;
+    transform: translateX(-52%);
+}
+
+.aboutdescrip{
+    font-size: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+.sectionmain{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.sectionabout{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    transition: 0.5s;
+}
+
+.sectionabout.open{
+    right: 0;
+}
+
+.sectionmv{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.sectionmv.open{
+    left: 0;
+}
+
+.right{
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    height: 4rem;
+}
+
+.left{
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    height: 4rem;
+}
+
+.name{
+    font-size: 4rem;
+    margin: 0;
+    margin-bottom: -1rem;
+}
+
+.sub{
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.descrip{
+    font-size: 1rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    line-height: 1.25rem;
+    display: none;
+}
+
+.scene{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+}
+
+.mia{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.seb{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sebside{
+    position: relative;
+    width: 46%;
+}
+
+.seasons{
+    transform: rotate(270deg);
+    position: absolute;
+    left: -5.2rem;
+    top: 50%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.summer{
+    transform: rotate(270deg);
+    position: absolute;
+    left: -5.5rem;
+    top: 45%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.fall{
+    transform: rotate(270deg);
+    position: absolute;
+    left: -3.2rem;
+    top: 45%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.winter{
+    transform: rotate(270deg);
+    position: absolute;
+    left: -18.3rem;
+    top: 47%;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.miaside{
+    position: relative;
+    width: 55%;
+}
+
+.miatext{
+    position: absolute;
+    width: 50%;
+    top: 5%;
+    left: 10rem;
+    text-align: left;
+}
+
+.sebtext{
+    position: absolute;
+    width: 50%;
+    bottom: 5%;
+    right: 4rem;
+    text-align: right;
+}
+
+.text{
+    position: absolute;
+    width: 30%;
+    top: 5%;
+    right: 4rem;
+    text-align: right;
+}
+
+.miamv{
+    position: relative;
+}
+
+.miamvarrow{
+    position: absolute;
+    height: 3rem;
+    left: 10%;
+    top: 50%;
+}
+
+.miasong{
+    position: absolute;
+    font-size: 14.375rem;
+    text-align: right;
+    width: 50%;
+    margin: 0 0;
+    right: 5%;
+    top: 6%;
+    line-height: 13rem;
+}
+
+.sectionpage{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.sectionmia{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.sectionmia.open{
+    left: 0;
+}
+
+.sebmv{
+    position: relative;
+}
+
+.sebmvarrow{
+    position: absolute;
+    height: 3rem;
+    right: 5%;
+    top: 50%;
+}
+
+.sebsong{
+    position: absolute;
+    font-size: 14.375rem;
+    text-align: left;
+    width: 50%;
+    margin: 0 0;
+    left: 10%;
+    top: 6%;
+    line-height: 13rem;
+}
+
+.sebsong2{
+    position: absolute;
+    font-size: 14.375rem;
+    text-align: left;
+    width: 40%;
+    margin: 0 0;
+    left: 10%;
+    top: 20%;
+    line-height: 13rem;
+}
+
+.sebsong3{
+    position: absolute;
+    font-size: 14.375rem;
+    text-align: left;
+    width: 30%;
+    margin: 0 0;
+    left: 10%;
+    top: 20%;
+    line-height: 13rem;
+}
+
+.sectionseb{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    transition: 0.5s;
+}
+
+.sectionseb.open{
+    right: 0;
+}
+
+.slider{
+    background-color: rgba(0,0,0,0.9);
+    width: 34rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -34rem;
+    padding-left: 10rem;
+    padding-top: 2rem;
+    transition: left 0.5s;
+    overflow-y: auto;
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.slider.open{
+    left: 0;
+}
+
+.slider a.active{
+    color: darkgrey;
+}
+
+.overlaym{
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.overlaym.open{
+    left: 0;
+}
+
+.overlays{
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100%;
+    right: -100%;
+    top: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.overlays.open{
+    right: 0;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.3);
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
